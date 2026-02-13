@@ -4,13 +4,20 @@ const jwt = require('jsonwebtoken');
 
 const app = express();
 
-// Middleware
-app.use(cors());
+// Middleware - CORS with origin restriction
+const allowedOrigins = process.env.CORS_ORIGIN 
+  ? process.env.CORS_ORIGIN.split(',')
+  : ['http://localhost:3000', 'http://localhost:3001'];
+
+app.use(cors({
+  origin: allowedOrigins,
+  credentials: true
+}));
 app.use(express.json());
 
 // Configuration
-const JWT_SECRET = 'your-secret-key-change-in-production';
-const PORT = 5000;
+const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key-change-in-production';
+const PORT = process.env.PORT || 5000;
 
 // This is a random telemetry data
 let missionData = {
@@ -132,6 +139,5 @@ app.get('/api/health', (req, res) => {
 
 // Start server
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-  console.log('Test credentials - username: customer, password: password');
+  console.log(`Server running on port ${PORT}`);
 });

@@ -4,6 +4,8 @@ import MissionStatusBadge from '../MissionStatusBadge';
 import MapView from '../MapView';
 import './PublicDashboard.css';
 
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+
 function PublicDashboard() {
   const [missionData, setMissionData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -12,7 +14,7 @@ function PublicDashboard() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/public/mission');
+        const response = await fetch(`${API_URL}/api/public/mission`);
         if (!response.ok) throw new Error('Failed to fetch data');
         const data = await response.json();
         setMissionData(data);
