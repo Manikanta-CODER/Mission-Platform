@@ -4,8 +4,6 @@ A minimal full-stack web application simulating a **high-altitude payload missio
 
 The system demonstrates how **public users** and **paid customers** access different telemetry views while sharing the same backend.
 
----
-
 ## **🚀 Core Concept**
 
 Two user categories are supported:
@@ -22,8 +20,6 @@ Two user categories are supported:
 * Access detailed telemetry & payload metrics
 * View historical mission data
 
----
-
 ## **🧩 Features**
 
 ### **Public Dashboard**
@@ -33,8 +29,6 @@ Two user categories are supported:
 * Mission status
 * Auto-updates every 2 seconds
 
----
-
 ### **Customer Dashboard (Protected)**
 
 * Full telemetry stream
@@ -43,23 +37,17 @@ Two user categories are supported:
 * Historical telemetry table
 * Live updates
 
----
-
 ### **Authentication**
 
 * JWT-based login
 * Route protection
 * Token persistence (localStorage)
 
----
-
 ### **Telemetry Simulation**
 
 * Backend updates every 2 seconds
 * Realistic sensor fluctuations
 * In-memory data model
-
----
 
 ## **🏗 Architecture Overview**
 
@@ -85,15 +73,11 @@ React Frontend  →  Express API Server  →  Mock Telemetry Engine
 
 * In-memory mock telemetry
 
----
-
 ## **🔐 Security Model**
 
 * Public endpoints expose limited fields only
 * Protected endpoints require valid JWT
 * Sensitive telemetry never sent to public routes
-
----
 
 ## **📡 API Endpoints**
 
@@ -107,8 +91,6 @@ Returns limited telemetry:
 * latitude
 * longitude
 * status
-
----
 
 ### **Authentication**
 
@@ -153,8 +135,6 @@ Runs on:
 http://localhost:3000
 ```
 
----
-
 ## **🎯 Engineering Focus**
 
 This project prioritizes:
@@ -164,7 +144,6 @@ This project prioritizes:
 * Demonstrable full-stack architecture
 * Clean component structure
 
----
 
 ## **📌 Possible Enhancements**
 
@@ -173,7 +152,3 @@ This project prioritizes:
 * User management & password hashing
 * Data visualization charts
 * Admin control panel
-
----
-
----
