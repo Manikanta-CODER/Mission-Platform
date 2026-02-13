@@ -1,0 +1,120 @@
+.customer-dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-header-with-logout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.dashboard-header {
+  margin-bottom: 0;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 36px;
+  color: #333;
+}
+
+.dashboard-header p {
+  margin: 10px 0 0 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.status-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.telemetry-section {
+  margin-bottom: 40px;
+}
+
+.telemetry-section h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.telemetry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.sensors-section {
+  margin-bottom: 40px;
+}
+
+.map-section {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.map-section h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.history-section {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.history-section h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.history-table thead {
+  background: #f8f9fa;
+  border-bottom: 2px solid #ddd;
+}
+
+.history-table th {
+  padding: 12px;
+  text-align: left;
+  color: #333;
+  font-weight: bold;
+}
+
+.history-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  color: #555;
+}
+
+.history-table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.footer-note {
+  background: #fff3cd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  color: #856404;
+  border: 1px solid #ffeaa7;
+}
+
+.footer-note p {
+  margin: 0;
+  font-size: 14px;
+}
