@@ -4,8 +4,6 @@ A minimal full-stack web application simulating a **high-altitude payload missio
 
 The system demonstrates how **public users** and **paid customers** access different telemetry views while sharing the same backend.
 
----
-
 ## **🚀 Core Concept**
 
 Two user categories are supported:
